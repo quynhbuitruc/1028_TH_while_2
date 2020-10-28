@@ -11,14 +11,11 @@
     <p id="display"></p>
     <script>
         let inputNumber = Number(prompt("Nhập 1 số nguyên dương bất kỳ"))
-        let decimal = inputNumber % 10
-        let interger = Math.floor(inputNumber / 10)
-        while (interger !== 0) {
-            document.getElementById("display").innerHTML += decimal
-            inputNumber = interger
+        while (inputNumber !== 0) {
             decimal = inputNumber % 10
-            interger = Math.floor(inputNumber / 10)
-        } document.getElementById("display").innerHTML += decimal
+            inputNumber = Math.floor(inputNumber / 10)
+            document.getElementById("display").innerHTML += decimal
+        }
     </script>
 </body>
 
