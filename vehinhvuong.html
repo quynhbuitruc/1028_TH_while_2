@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <pre id="canvas"></pre>
+    <script>
+        let canvas = document.getElementById("canvas")
+        let countRow = 1
+        while (countRow <= 5) {
+            let countCol = 0
+            do {
+                canvas.innerHTML += " *"
+                countCol++
+            } while (countCol<5)
+            canvas.innerHTML += "<br>"
+            countRow++
+        }
+    </script>
+</body>
+
+</html>
