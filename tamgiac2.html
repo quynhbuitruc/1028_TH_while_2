@@ -12,12 +12,15 @@
     <script>
         let canvas = document.getElementById("canvas")
         let countRow = 15
+        do {
             let countCol = 10
             while (countCol < countRow) {
                 canvas.innerHTML += " *"
                 countCol++
             }
-            
+            canvas.innerHTML += "<br>"
+            countRow--
+        } while (countRow > 10)
 
     </script>
 </body>
