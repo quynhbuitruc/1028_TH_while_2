@@ -6,12 +6,12 @@
     <title>Star1</title>
 </head>
 <body>
+    <pre id="canvas"></pre>
     <script>
-        let count = 1
-        let x = "*<br>"
-        while (count <=5) {
-            document.write(x)
-            count++
+        let countCol = 1
+        while (countCol <=5) {
+            document.getElementById("canvas").innerHTML += "*"
+            countCol++
         }
         
     </script>
