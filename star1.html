@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star1</title>
 </head>
+
 <body>
     <pre id="canvas"></pre>
     <script>
-        let countCol = 1
-        while (countCol <=5) {
-            document.getElementById("canvas").innerHTML += "*"
-            countCol++
+        let canvas = document.getElementById("canvas")
+        let countRow = 1
+        while (countRow < 12) {
+            let countCol = 0
+            while (countCol < countRow) {
+                canvas.innerHTML += "*"
+                countCol++
+            }
+            countRow++
+            canvas.innerHTML += "<br>"
         }
-        
     </script>
 </body>
+
 </html>
