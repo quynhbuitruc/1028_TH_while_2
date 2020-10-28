@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số đảo ngược</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <script>
+        let inputNumber = Number(prompt("Nhập 1 số nguyên dương bất kỳ"))
+        let decimal = inputNumber % 10
+        let interger = Math.floor(inputNumber / 10)
+        while (interger !== 0) {
+            document.getElementById("display").innerHTML += decimal
+            inputNumber = interger
+            decimal = inputNumber % 10
+            interger = Math.floor(inputNumber / 10)
+        } document.getElementById("display").innerHTML += decimal
+    </script>
+</body>
+
+</html>
