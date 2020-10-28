@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tam giác 4</title>
+</head>
+
+<body>
+    <p id="canvas" style="text-align: right;"></p>
+    <script>
+        let canvas = document.getElementById("canvas")
+        let countRow = 15
+        do {
+            let countCol = 10
+            while (countCol < countRow) {
+                canvas.innerHTML += " *"
+                countCol++
+            }
+            canvas.innerHTML += "<br>"
+            countRow--
+        } while (countRow > 10)
+
+    </script>
+</body>
+
+</html>
