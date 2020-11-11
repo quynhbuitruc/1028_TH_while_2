@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng 10x10</title>
+</head>
+
+<body>
+    <pre id="table"></pre>
+    <button onclick="hienThiBang()">Vẽ Bảng</button>
+
+    <script>
+        let sout
+        sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+
+        function hienThiBang() {
+            veBang()
+            document.write(sout);
+        }
+
+        function veBang() {
+            veMuoiHang()
+            sout += "</table>"
+        }
+
+        function veMuoiHang() {
+            for (let i = 1; i <= 10; i++) {
+                veMotHang()
+            }
+        }
+        function veMotHang() {
+            sout += "<tr>";
+            veMuoiO()
+            sout += "</tr>";
+        }
+
+        function veMuoiO() {
+            for (let i = 1; i <= 10; i++) {
+                veMotO(i)
+            }
+        }
+
+        function veMotO(x) {
+            sout += "<td>" + x + "</td>";
+        }
+
+    </script>
+</body>
+
+</html>
