@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="drawFiveRows()"> Vẽ hình vuông </button>
+    <pre id="canvas"></div>
+
+    <script>
+        function drawOnepoint() {
+            document.getElementById("canvas").innerText += " *"
+        }
+
+        function breakLine() {
+            document.getElementById("canvas").innerText += "\n"
+        }
+
+        function drawOneRow() {
+            for (let i = 0; i < 5; i++) {
+                drawOnepoint()
+            }
+            breakLine()
+        }
+
+        function drawFiveRows() {
+            for (let i = 0; i < 5; i++) {
+                drawOneRow()
+            }
+        }
+    </script>
+</body>
+</html>
