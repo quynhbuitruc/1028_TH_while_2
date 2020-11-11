@@ -12,9 +12,26 @@
     <script>
         let n = Number(prompt("Nhập số lượng con số mong muốn trong dãy fibonacci"))
         let number1 = number2 = Number(prompt("Nhập số đầu tiên của dãy fibonacci"))
-        for (let count = 1; count <= n; count ++) {
-            sum = number1 + number2
-            document.getElementById("display").innerHTML += "<br>" + number1 
+
+        for (let count = 1; count <= n; count++) {
+            tongHopHaiFunctions()
+            nhanNumbermoi()
+        }
+
+        function tongHopHaiFunctions() {
+            showNumber1(number1)
+            calSum(number1, number2)
+        }
+
+        function showNumber1(no1) {
+            document.getElementById("display").innerHTML += "<br>" + no1
+        }
+
+        function calSum(num1, num2) {
+            sum = num1 + num2
+        }
+
+        function nhanNumbermoi() {
             number1 = number2
             number2 = sum
         }
